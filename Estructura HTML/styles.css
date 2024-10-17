@@ -54,12 +54,13 @@ text-decoration: none;
 background-color:  #f06e75;
 
 }
-.heade__foto1 {
-    display: flex;
-     
-}
+.header__foto1{
+display: flex;
+justify-content: space-evenly;
+max-height: 900px;
 
-  
+
+}
 /*Herencia del codigo html y css*/
 
 /*Padre central: <header class="header__flexbox">*/
