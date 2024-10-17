@@ -1,91 +1,67 @@
+/* Estilos basicos CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header__flexbox {
+  background-color: #f06e75;
 }
 
 body {
-    font-family: sans-serif;
-    background-color: #fff59d;
+  font-family: sans-serif;
+  background-color: #fff59d;
 }
+/*Agegando estilos con flexbox*/
 
 .header__flexbox {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f06e75;
-    flex-wrap: wrap; /* Para que se ajuste mejor en pantallas pequeñas */
 }
 
 .header__logo {
-    width: 200px; /* Ajusta el tamaño según sea necesario */
-    justify-content: center;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100px;
+
 }
 
 .header__titulo {
-    font-size: 2.5rem;
-    text-align: center;
-    flex-grow: 1;
-}
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 50px;
+  text-align: center;
+padding: 30px;
 
-.header__nav {
-    display: flex;
-    flex-grow: 1;
-    
 }
 
 .header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  list-style-type: none;
+
+}
+.header__item a {
+text-decoration: none;
+  font-size: 25px;
+  color: #121212;
+  
+}
+.header__item :hover{
+background-color:  #f06e75;
+
+}
+.heade__foto1 {
     display: flex;
-    list-style: none;
-    gap: 20px;
+     
+}
+
   
-   top:50px;
-}
-
-.header__nav-link {
-  text-decoration: none;
-    color: #fff;
-    background-color:transparent;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background-color 0.01s ease;
- 
-}
-
-.header__nav-link:hover {
-    background-color: #00af80;
-   
-}
-
-/* Media query para pantallas pequeñas */
- 
-@media screen and (min-width: 900px) {
-    .header__flexbox{
-      display: block;
-      flex-direction: column;
-    }
-  }
-  
-    .header__nav {
-        justify-content: center;
-        
-    }
-    .header__nav-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .header__nav-link {
-        display: block;
-        width: 100%;
-    }
-    
-
-        
 /*Herencia del codigo html y css*/
-        
+
 /*Padre central: <header class="header__flexbox">*/
 /*Hijos directos del <header>:*/
 /*<div> que contiene el logo (<img>).*/
