@@ -3,38 +3,232 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colegio República de Colombia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>Colegio República de Colombia</title>
   </head>
   <body>
-    <header class="header__flexbox">
-      <div>
-        <img class="header__logo" src="logo.png" alt="" />
-      </div>
-      <div>
-        <h1 class="header__titulo">Colegio Republica de Colombia</h1>
-      </div>
+    <!-- Encabezado principal del sitio -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
 
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__item"><a href="#">Inicio</a></li>
-          <li class="header__item"><a href="#">Mision</a></li>
-          <li class="header__item"><a href="#">Vision</a></li>
-          <li class="header__item"><a href="#">Historia</a></li>
-          <li class="header__item"><a href="#">Registro</a></li>
-          <li class="header__item"><a href="#">Calificaciones</a></li>
-          <li class="header__item"><a href="#">Calendario</a></li>
-          <li class="header__item"><a href="#">Contacto</a></li>
-        </ul>
+          <a class="navbar-brand" href="#">
+            <img
+            src="Imagenes/log1.png"
+            alt="Escudo del colegio"
+            class="img-fluid"
+            />
+          </a>
+      
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Menú Inicio -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Inicio
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Mision</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Vision</a></li>
+                  <li><a class="dropdown-item" href="#">Historia</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Direccion General</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Menú Matricula -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modalidad
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Primaria</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Secundaria</a></li>
+                </ul>
+              </li>
+
+              <!-- Menú Calificaciones -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Calificaciones
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Consultar Calificaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Historial Académico</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reportes Académicos</a>
+                  </li>
+                </ul>
+              
+              <!-- Menú Registro -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro Academico</a>
+              </li>
+            </li>
+            <!-- Menú Contacto -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+           </ul>
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit" >
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <!-- Contenido principal -->
     <main>
-      <div  class="header__foto1" >
-        <img src="FotografiaDocentes.jpg" alt="" />
+      <!-- Sección de bienvenida -->
+      <div class="main-fluid">
+        <div class="row">
+          <div class="col-md-12 col-md-8 col-12">
+            <h1 >Colegio Republica de Colombia</h1>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>Nuestra Historia</h2>
-      </div>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Mision</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Vision</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Historia</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Direccion General</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Primaria</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Secundaria</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
+      <section class="container py-5">
+        <article class="row bg-light p-4">
+          <div class="col-md-8">
+            <h2>Contacto</h2>
+            <p>Este es el contenido del artículo.</p>
+          </div>
+        </article>
+      </section>
     </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-light text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Información de contacto</h5>
+            <p>Dirección: Colonia Villa Don Bosco, Managua, Nicaragua</p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Redes sociales</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-dark">Facebook</a></li>
+              <li><a href="#!" class="text-dark">Twitter</a></li>
+              <li><a href="#!" class="text-dark">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Colegio República de Colombia. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

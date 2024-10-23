@@ -1,70 +1,22 @@
-/* Estilos basicos CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+  background-color: #7a5ad6;
 }
-.header__flexbox {
-  background-color: #f06e75;
+.navbar{
+  background-color: #cfb6ff;
 }
-
-body {
-  font-family: sans-serif;
-  background-color: #fff59d;
+.nav-item{
+  font-size:x-large;
 }
-/*Agegando estilos con flexbox*/
-
-.header__flexbox {
-  display: flex;
-  flex-direction: column;
-
+.main-fluid h1{
+ color:#ffff;
+font-size: 35px;
+   display: flex;
+ text-align: center;
+  justify-content:start;
+  padding: 10px;
+  background-color:#cfb6ff;
 }
-
-.header__logo {
-  background-color: transparent;
-  max-width: 100%;
-  width: 100px;
-
+.btn:hover{
+  background-color: #7a5ad6;
+  font-size:x-large;
 }
-
-.header__titulo {
-  background-color: transparent;
-  font-family: sans-serif;
-  font-size: 50px;
-  text-align: center;
-padding: 30px;
-
-}
-
-.header__nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgb(255, 255, 255);
-  list-style-type: none;
-
-}
-.header__item a {
-text-decoration: none;
-  font-size: 25px;
-  color: #121212;
-  
-}
-.header__item :hover{
-background-color:  #f06e75;
-
-}
-.header__foto1{
-display: flex;
-justify-content: space-evenly;
-max-height: 900px;
-
-
-}
-/*Herencia del codigo html y css*/
-
-/*Padre central: <header class="header__flexbox">*/
-/*Hijos directos del <header>:*/
-/*<div> que contiene el logo (<img>).*/
-/*<div> que contiene el título (<h1>).*/
-/*<nav class="header__nav">*/
