@@ -1,44 +1,240 @@
-body{
-  background-color: #1693a5;
-}
-.navbar{
-  background-color:#9cad9a;
-}
-.nav-item{
-  font-size:x-large;
-}
-.main-fluid h1{
-  font-weight: bold;
- color:#000000;
-font-size: 35px;
- text-align:center;
- padding: 5px;
-  background-color:#9cad9a;
-}
-.btn:hover{
-  background-color: #7a5ad6;
-  font-size:x-large;
-}
-#seccion1{
-  background-color:#37FFaa;
-  text-align: center;
-   width: auto;
- margin-top: 30px;
-   
+body {
+  background-color: #ffffff;
 }
 h2 {
-  text-align: center; /* Centrar el texto del título */
   font-weight: bold;
 }
-
 p {
-  text-align: center; /* Centrar el texto del párrafo */
+  font-size: 1.5rem;
+  color: #555; /* Color del texto del párrafo */
+  line-height: 1.1;
+  text-align: justify;
+}
+.navbar {
+  background-color: #f2f2f2;
+}
+.nav-item {
+  font-size: x-large;
+}
+.main-fluid h1 {
+  font-weight: bold;
+  color: #726c7299;
+  font-size: 35px;
+  text-align: center;
+  padding: 5px;
+  background-color: #fff;
+}
+.btn:hover {
+  background-color: #b9ffb1;
+  font-size: x-large;
+  color: #333;
 }
 
-#articulo_mision{
-  display: flex;
-font-size: 1.5rem;
- flex-direction: column;
-  background-color: transparent;
+/* Cambia el color de la flecha de retroceso */
+.carousel-control-prev-icon {
+  background-color: #4abe07;
+  border-radius: 50%; /* Para que tenga un efecto circular */
+}
+
+/* Cambia el color de la flecha de avance */
+.carousel-control-next-icon {
+  background-color: #4abe07; /* Cambia el color aquí */
+  border-radius: 50%; /* Para que tenga un efecto circular */
+}
+
+/* Contenedor principal para la superposición */
+.overlay-container {
+  padding: 10 10;
+  position:relative;
   text-align: center;
+  color: black;
+}
+
+/* Imagen de fondo con transparencia */
+.background-image {
+  width: 100%; /* Ajusta al ancho del contenedor */
+  opacity: 0.5; /* Controla la transparencia de la imagen */
+}
+
+/* Texto superpuesto */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffc8e6; /* Fondo semi-transparente para el texto */
+  padding: 20px;
+  box-shadow: 0 0 10px #00000033;
+  border-radius: 8px;
+}
+
+/* Estilo para secciones y artículos con fondo semi-transparente */
+.styled-section {
+  background-color: #b9ffb1; /* Fondo semi-transparente (puedes ajustar los valores) */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 0 10px #00000033; /* Sombra suave */
+  text-align: center;
+}
+.dropdown-menu {
+  background-color: #4abe07;
+  transition: background-color 0.3s ease;
+  font-size: 1.8rem;
+}
+.dropdown-item:hover {
+  background-color: #b9ffb1; /* Color al pasar el cursor por encima */
+  color: #000000;
+}
+#tex-mision{
+  max-width: 100%;
+  margin: 10 auto;
+  background-color:#b9ffb1; /* Fondo semi-transparente para el texto */
+  box-shadow: 0 0 10px #00000033;
+  border-radius: 8px;
+  color: #0a0a0a;
+}
+#texto-Historia {
+  max-width: 100%;
+  background-color: #000000e6; /* Fondo semi-transparente para el texto */
+  box-shadow: 0 0 10px #00000033;
+  border-radius: 8px;
+  color: #fff;
+}
+#histo {
+  color: #f8f8f8;
+}
+
+/* Footer Styles */
+.custom-footer {
+  background-color: #ee0d0d; /* Fondo claro */
+  color: #212529; /* Texto oscuro */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 280px;
+}
+
+/* Títulos y separadores */
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-divider {
+  width: 50px;
+  height: 3px;
+  background-color: #343a40; /* Color de línea divisor */
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Información de contacto */
+.contact-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 10px;
+}
+/* Formulario de Contacto */
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: hwb(0 100% 0%);
+  outline: none;
+  box-shadow: 0 0 5px hwb(237 0% 0% / 0.677);
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.social-media a {
+  display: inline-block;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #b9ffb1;
+}
+.social-media a.facebook {
+  background-color: #3b5998; /* Color de Facebook */
+}
+
+.social-media a.whatsapp {
+  background-color: #25d366; /* Color de WhatsApp */
+}
+
+.social-media a.instagram {
+  background-color: #e1306c; /* Color de Instagram */
+}
+
+.social-media a:hover {
+  background-color: #555; /* Cambia el color cuando pases el mouse por encima */
 }
