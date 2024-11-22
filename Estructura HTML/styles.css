@@ -1,33 +1,38 @@
+
+
 body {
   background-color: #ffffff;
 }
 h2 {
   font-weight: bold;
+  color: #030303; 
 }
 p {
   font-size: 1.5rem;
-  color: #555; /* Color del texto del párrafo */
+  color: #030303; /* Color del texto del párrafo */
   line-height: 1.1;
-  text-align: justify;
+  text-align:center;
 }
-.navbar {
-  background-color: #f2f2f2;
+.navbar:hover {
+  background-color: #ffffff;
+  background-color: #4abe07;
 }
 .nav-item {
   font-size: x-large;
 }
-.main-fluid h1 {
+.main-fluid h1{
   font-weight: bold;
-  color: #726c7299;
+  color: #9c9a9a99;
   font-size: 35px;
   text-align: center;
   padding: 5px;
   background-color: #fff;
 }
+
 .btn:hover {
-  background-color: #b9ffb1;
+  background-color:#bbffce;
   font-size: x-large;
-  color: #333;
+  color: #010101;
 }
 
 /* Cambia el color de la flecha de retroceso */
@@ -42,72 +47,32 @@ p {
   border-radius: 50%; /* Para que tenga un efecto circular */
 }
 
-/* Contenedor principal para la superposición */
-.overlay-container {
-  padding: 10 10;
-  position:relative;
-  text-align: center;
-  color: black;
-}
-
-/* Imagen de fondo con transparencia */
-.background-image {
-  width: 100%; /* Ajusta al ancho del contenedor */
-  opacity: 0.5; /* Controla la transparencia de la imagen */
-}
-
-/* Texto superpuesto */
-.overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffc8e6; /* Fondo semi-transparente para el texto */
-  padding: 20px;
-  box-shadow: 0 0 10px #00000033;
-  border-radius: 8px;
-}
-
-/* Estilo para secciones y artículos con fondo semi-transparente */
-.styled-section {
-  background-color: #b9ffb1; /* Fondo semi-transparente (puedes ajustar los valores) */
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px; /* Esquinas redondeadas */
-  box-shadow: 0 0 10px #00000033; /* Sombra suave */
-  text-align: center;
-}
 .dropdown-menu {
   background-color: #4abe07;
   transition: background-color 0.3s ease;
   font-size: 1.8rem;
 }
 .dropdown-item:hover {
-  background-color: #b9ffb1; /* Color al pasar el cursor por encima */
+  background-color:#bbffce; /* Color al pasar el cursor por encima */
   color: #000000;
 }
-#tex-mision{
-  max-width: 100%;
-  margin: 10 auto;
-  background-color:#b9ffb1; /* Fondo semi-transparente para el texto */
-  box-shadow: 0 0 10px #00000033;
-  border-radius: 8px;
-  color: #0a0a0a;
+/* Aplicando estilos a las secciones */
+/* Archivo CSS */
+.bg-mision {
+  background-color:#bbffce; /* Color azul personalizado */
 }
-#texto-Historia {
-  max-width: 100%;
-  background-color: #000000e6; /* Fondo semi-transparente para el texto */
-  box-shadow: 0 0 10px #00000033;
-  border-radius: 8px;
-  color: #fff;
+
+.bg-vision {
+  background-color: #ffffa5; /* Color amarillo personalizado */
 }
-#histo {
-  color: #f8f8f8;
+
+.bg-historia {
+  background-color: #000000; /* Color gris oscuro personalizado */
 }
 
 /* Footer Styles */
-.custom-footer {
-  background-color: #ee0d0d; /* Fondo claro */
+.custom-footer{
+  background-color: #000000; /* Fondo claro */
   color: #212529; /* Texto oscuro */
   padding: 40px 0;
   font-family: Arial, sans-serif;
@@ -128,27 +93,26 @@ p {
   margin: 20px;
   min-width: 280px;
 }
-
 /* Títulos y separadores */
 .footer-section h3 {
-  font-size: 22px;
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
 .footer-divider {
   width: 50px;
   height: 3px;
-  background-color: #343a40; /* Color de línea divisor */
+  background-color: #000000; /* Color de línea divisor */
   margin-bottom: 20px;
   border: none;
 }
 
 /* Información de contacto */
 .contact-info {
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: #bbffce;
+  padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(243, 12, 12, 0.1);
 }
 
 .contact-item {
@@ -164,10 +128,10 @@ p {
 }
 /* Formulario de Contacto */
 .contact-form {
-  background-color: #ffffff;
+  background-color: #bbffce;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #0101011a;
 }
 
 .form-group {
@@ -181,12 +145,12 @@ p {
   margin-bottom: 5px;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   padding: 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #4abe07;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
@@ -194,12 +158,12 @@ p {
 .form-group textarea:focus {
   border-color: hwb(0 100% 0%);
   outline: none;
-  box-shadow: 0 0 5px hwb(237 0% 0% / 0.677);
+  box-shadow: 0 0 15px #4abe07; 
 }
 
 .submit-btn {
   background-color: #007bff;
-  color: #ffffff;
+  color:#ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -221,7 +185,7 @@ p {
 }
 
 .submit-btn:hover {
-  background-color: #b9ffb1;
+  background-color: #4abe07;
 }
 .social-media a.facebook {
   background-color: #3b5998; /* Color de Facebook */
@@ -235,6 +199,15 @@ p {
   background-color: #e1306c; /* Color de Instagram */
 }
 
-.social-media a:hover {
-  background-color: #555; /* Cambia el color cuando pases el mouse por encima */
+a.instagram:hover {
+  background-color: #ff0000; /* Color de Instagram */
 }
+a.whatsapp:hover {
+  background-color: #00ff5e; /* Color de WhatsApp */
+}
+
+a.facebook:hover {
+  background-color: #0051ff; /* Color de Facebook */
+}
+
+
