@@ -19,6 +19,7 @@
       ></script>
   </head>
   <body>
+    
     <!-- Encabezado principal del sitio -->
     <header>
       <nav class="navbar navbar-expand-lg">
@@ -77,7 +78,7 @@
                 <ul class="dropdown-menu">
                
                   <li>
-                    <a class="dropdown-item" href="#">Matricula</a>
+                    <a class="dropdown-item" href="loginMatricula.html" target="_blank">Matricula</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Primaria</a>
@@ -114,7 +115,7 @@
               <li>
               <!-- Menú Registro -->
               <li class="nav-item">
-                <a class="nav-link" href="Calificaciones_academicas.html" target="_blank">Calificaciones</a>
+                <a class="nav-link" href="loginCalificaciones.html" target="_blank">Calificaciones</a>
               </li>
             </li>
             <!-- Menú Contacto -->
@@ -254,11 +255,11 @@
               <hr class="footer-divider">
               <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <p>hgouashguhaogha</p>
+                <p>5804-3189</p>
               </div>
               <div class="contact-item">
                 <i class="fas fa-bus"></i>
-                <p>shukashkashkkluh</p>
+                <p>MR-4--159--195-109 </p>
               </div>
               <div class="social-media">
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -277,8 +278,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      
-            </div>
+       </div>
       
             <!-- Formulario de Contacto (columna grande, alineada a la derecha) -->
             <div id="contacto" class="col-md-8 footer-section contact-form">
@@ -301,25 +301,43 @@
                   <label for="message">Mensaje o consulta</label>
                   <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
                 </div>
-                <div class="form-group captcha">
-                  <label for="captcha">Completa el Captcha *</label>
-                  <input type="text" id="captcha" placeholder="¿Cuánto es 5 * 3?" required>
-                </div>
-                <button type="submit" class="submit-btn">Enviar consulta</button>
+               <button type="submit" class="submit-btn">Enviar consulta</button>
               </form>
             </div>
           </div>
         </div>
-      
-     
         <!-- Sección de Derechos Reservados -->
         <div class="text-center p-4 bg-historia">
-          <p class="text-white">© 2024 Todos los derechos reservados:</p>
-          <a class="text-white" href="#">MiSitioWeb.com</a>
+          <p class="text-white">© 2024 Todos los derechos reservados: ColegioRepublicadeColombia@....</p>
+          <a class="text-white" href="#"></a>
         </div>
       </footer>
-      
+      <!-- Botón de Scroll hacia arriba -->
+<button
+type="button"
+class="btn btn-primary btn-lg"
+id="scrollTopButton"
+style="position: fixed; bottom: 40px; right: 20px; display: none; z-index: 1000;"
+>
+<i class="fas fa-arrow-up"></i>
+</button>
 
+<script>
+// Mostrar el botón cuando se desplaza hacia abajo 100px desde la parte superior
+window.onscroll = function() {
+  const scrollButton = document.getElementById('scrollTopButton');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+};
+
+// Función para desplazarse hacia la parte superior cuando se hace clic en el botón
+document.getElementById('scrollTopButton').onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
   </body>
 </html>
 
